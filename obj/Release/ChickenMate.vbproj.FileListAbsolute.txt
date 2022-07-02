@@ -1,0 +1,14 @@
+C:\Users\Francesc\Desktop\ChickenMate\bin\Release\ChickenMate.exe.config
+C:\Users\Francesc\Desktop\ChickenMate\bin\Release\ChickenMate.exe
+C:\Users\Francesc\Desktop\ChickenMate\bin\Release\ChickenMate.pdb
+C:\Users\Francesc\Desktop\ChickenMate\bin\Release\ChickenMate.xml
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.vbproj.AssemblyReference.cache
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.About.resources
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.Chicken.resources
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.Resources.resources
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.vbproj.GenerateResource.cache
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.vbproj.CoreCompileInputs.cache
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.exe
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.xml
+C:\Users\Francesc\Desktop\ChickenMate\obj\Release\ChickenMate.pdb
