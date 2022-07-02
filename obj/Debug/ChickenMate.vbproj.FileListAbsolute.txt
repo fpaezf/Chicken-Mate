@@ -25,3 +25,16 @@ D:\Visual Basic\Por acabar\ChickenMate\obj\Debug\ChickenMate.vbproj.CoreCompileI
 D:\Visual Basic\Por acabar\ChickenMate\obj\Debug\ChickenMate.exe
 D:\Visual Basic\Por acabar\ChickenMate\obj\Debug\ChickenMate.xml
 D:\Visual Basic\Por acabar\ChickenMate\obj\Debug\ChickenMate.pdb
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\bin\Debug\ChickenMate.exe.config
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\bin\Debug\ChickenMate.exe
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\bin\Debug\ChickenMate.pdb
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\bin\Debug\ChickenMate.xml
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.vbproj.AssemblyReference.cache
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.About.resources
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.Chicken.resources
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.Resources.resources
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.vbproj.GenerateResource.cache
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.vbproj.CoreCompileInputs.cache
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.exe
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.xml
+D:\Visual Basic\Por acabar\ChickenMate\Chicken-Mate\obj\Debug\ChickenMate.pdb

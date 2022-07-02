@@ -26,6 +26,7 @@ Partial Class Chicken
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Chicken))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Animation = New System.Windows.Forms.Timer(Me.components)
+        Me.DoSpecialAnimation = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,6 +44,11 @@ Partial Class Chicken
         'Animation
         '
         Me.Animation.Interval = 50
+        '
+        'DoSpecialAnimation
+        '
+        Me.DoSpecialAnimation.Enabled = True
+        Me.DoSpecialAnimation.Interval = 10000
         '
         'Chicken
         '
@@ -66,4 +72,5 @@ Partial Class Chicken
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Animation As Timer
+    Friend WithEvents DoSpecialAnimation As Timer
 End Class

@@ -22,6 +22,36 @@ ChickenMate
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:ChickenMate.My.Resources.Resources.Pick_Left1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ChickenMate.My.Resources.Resources.Pick_Left2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ChickenMate.My.Resources.Resources.Pick_Left3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ChickenMate.My.Resources.Resources.Pick_Right1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ChickenMate.My.Resources.Resources.Pick_Right2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ChickenMate.My.Resources.Resources.Pick_Right3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ChickenMate.My.Resources.Resources.Walk_Left1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

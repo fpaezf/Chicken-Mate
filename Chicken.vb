@@ -7,6 +7,9 @@ Public Class Chicken
     Dim WalkLeft As Bitmap() = New Bitmap(3) {My.Resources.Walk_Left1, My.Resources.Walk_Left2, My.Resources.Walk_Left1, My.Resources.Walk_Left3}
     Dim WalkRight As Bitmap() = New Bitmap(3) {My.Resources.Walk_Right1, My.Resources.Walk_Right2, My.Resources.Walk_Right1, My.Resources.Walk_Right3}
 
+    Dim PickLeft As Bitmap() = New Bitmap(7) {My.Resources.Pick_Left1, My.Resources.Pick_Left2, My.Resources.Pick_Left3, My.Resources.Pick_Left2, My.Resources.Pick_Left3, My.Resources.Pick_Left2, My.Resources.Pick_Left3, My.Resources.Pick_Left1}
+    Dim PickRight As Bitmap() = New Bitmap(7) {My.Resources.Pick_Right1, My.Resources.Pick_Right2, My.Resources.Pick_Right3, My.Resources.Pick_Right2, My.Resources.Pick_Right3, My.Resources.Pick_Right2, My.Resources.Pick_Right3, My.Resources.Pick_Right1}
+
     Dim frame As Integer = 0
 
 
@@ -19,6 +22,7 @@ Public Class Chicken
     Dim FallSpeed As Integer = 0
     Dim Is_Walking As Boolean = True
     Dim Is_Falling As Boolean = False
+    Dim Is_Picking As Boolean = False
 
     Protected Overrides ReadOnly Property CreateParams As CreateParams
         Get
@@ -38,6 +42,7 @@ Public Class Chicken
     Public Sub StopAllAnimations()
         Is_Walking = False
         Is_Falling = False
+        Is_Picking = False
         frame = 0
     End Sub
 
@@ -46,6 +51,7 @@ Public Class Chicken
 
 
         If Is_Walking = True Then
+            Animation.Interval = 150
             If AnimationDirection = "Left" Then
                 If frame < WalkLeft.Count - 1 Then
                     PictureBox1.Image = WalkLeft(frame)
@@ -79,6 +85,7 @@ Public Class Chicken
 
 
         ElseIf Is_Falling = True Then
+            Animation.Interval = 30
             FallSpeed = FallSpeed + 1
             If FallSpeed > 30 Then
                 FallSpeed = 30
@@ -94,7 +101,39 @@ Public Class Chicken
 
 
         ElseIf Is_Dragging = True Then
+            Animation.Interval = 50
             StopAllAnimations()
+
+
+
+        ElseIf Is_Picking = True Then
+            Animation.Interval = 300
+            If AnimationDirection = "Left" Then
+                If frame < PickLeft.Count - 1 Then
+                    PictureBox1.Image = PickLeft(frame)
+                    frame = frame + 1
+                Else
+                    PictureBox1.Image = PickLeft(frame)
+                    frame = 0
+                End If
+            ElseIf AnimationDirection = "Right" Then
+                If frame < PickRight.Count - 1 Then
+                    PictureBox1.Image = PickRight(frame)
+                    frame = frame + 1
+                Else
+                    PictureBox1.Image = PickRight(frame)
+                    frame = 0
+                End If
+            End If
+
+
+
+
+
+
+
+
+
 
         End If
 
@@ -131,12 +170,19 @@ Public Class Chicken
         Is_Dragging = False
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
     Private Sub PictureBox1_DoubleClick(sender As Object, e As EventArgs) Handles PictureBox1.DoubleClick
         End
+    End Sub
 
+    Private Sub DoSpecialAnimation_Tick(sender As Object, e As EventArgs) Handles DoSpecialAnimation.Tick
+
+
+        If Is_Picking = False Then
+            StopAllAnimations()
+            Is_Picking = True
+        Else
+            StopAllAnimations()
+            Is_Walking = True
+        End If
     End Sub
 End Class
