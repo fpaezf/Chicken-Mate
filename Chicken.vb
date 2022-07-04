@@ -47,9 +47,6 @@ Public Class Chicken
     End Sub
 
     Private Sub Animation_Tick(sender As Object, e As EventArgs) Handles Animation.Tick
-        Me.TopMost = True
-
-
         If Is_Walking = True Then
             Animation.Interval = 150
             If AnimationDirection = "Left" Then
@@ -90,10 +87,23 @@ Public Class Chicken
             If FallSpeed > 30 Then
                 FallSpeed = 30
             End If
+
+
+            If frame < WalkLeft.Count - 1 Then
+                PictureBox1.Image = WalkLeft(frame)
+                frame = frame + 1
+            Else
+                PictureBox1.Image = WalkLeft(frame)
+                frame = 0
+            End If
             Me.Location = New Point(Me.Location.X, Me.Location.Y + FallSpeed)
             If Me.Location.Y >= Screen.PrimaryScreen.WorkingArea.Height - Me.Height Then
-                Me.Location = New Point(Me.Location.X, Screen.PrimaryScreen.WorkingArea.Height - Me.Height)
                 StopAllAnimations()
+                Me.Location = New Point(Me.Location.X, Screen.PrimaryScreen.WorkingArea.Height - Me.Height)
+                My.Computer.Audio.Play(My.Resources.crash, AudioPlayMode.Background)
+                PictureBox1.Image = My.Resources.crash_bottom
+                Application.DoEvents()
+                Threading.Thread.Sleep(2000)
                 Is_Walking = True
             End If
 
@@ -156,6 +166,7 @@ Public Class Chicken
 
     Private Sub PictureBox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
         Is_Dragging = False
+        FallSpeed = 0
         Is_Falling = True
     End Sub
 
@@ -175,14 +186,16 @@ Public Class Chicken
     End Sub
 
     Private Sub DoSpecialAnimation_Tick(sender As Object, e As EventArgs) Handles DoSpecialAnimation.Tick
-
-
-        If Is_Picking = False Then
-            StopAllAnimations()
-            Is_Picking = True
-        Else
-            StopAllAnimations()
-            Is_Walking = True
+        If Not Is_Falling = True Then
+            If Is_Picking = False Then
+                StopAllAnimations()
+                Is_Picking = True
+            Else
+                StopAllAnimations()
+                Is_Walking = True
+            End If
         End If
     End Sub
+
+
 End Class

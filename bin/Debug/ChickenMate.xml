@@ -22,6 +22,16 @@ ChickenMate
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:ChickenMate.My.Resources.Resources.crash">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:ChickenMate.My.Resources.Resources.crash_bottom">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ChickenMate.My.Resources.Resources.Pick_Left1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

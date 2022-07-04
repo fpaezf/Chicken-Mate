@@ -117,7 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="crash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="crash_bottom" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAIpSURBVGhD7ZmxbRtBEEXZhnKFLkEtWBAcuArl6sEFOHKkStSC4UIMOFEoYaAh8bD3drn08o4H
+        6gZ4yXHn/zcxd3PMl5vbt15yZZ1jwjVyZZ1jwjVyZT1Dud/PPyc83T8e4NtcX89QbjvkUkMhk++BGRm7
+        /FDCJHtgRsYuP5QwyR6YkbHLDyVMkrz9/XOA35lBsmKZYTHljO2QuYZlFCKUNmynhD1Zfd5hgQkEJk9s
+        p4Q9WX3eYYEJBCZPbKeEPVk9Pgy10sCEe7CsgJ2pMT4MtdLAJHuwrICdqTE+DLXSwCR7sKyAnakxPgxl
+        mYmNwGzCfpJ6/cNlFpjMCMwm7Cep1x4uWHhgMiNYR0AXkqrt4YKFByYzgnWU0CtV28MFCwxMZgTrKKFX
+        qk6Hj7hspXPAzhp0TO3p8BGXrXQOap38TuibJ3wMf+ACQ+ek1snvhL4Xlye1fn4ndD/LIT9uvyr2tgVd
+        7PeAjnx/nYfYYg92RGBvW/S4zHrIv/vvB0YO6eFzHcJHFlJjyUMI3U86hG8pT7ZD/gP6rOqQY/0l9Dn7
+        IbbXy7H+Evpsh9gRge3t4b512bcWzNsOsSMC29vDfeuyby2YN/sh3KlR7gQ1F35nxkmHEDsiKN8xv0a5
+        E9Rc+J0Z13MIh38hc4FBe+yIoHzHHBaX71rUMlJ7Oqcc0gtzKGFva9QyUns6V3MIhwstXn99O8rLw90B
+        yziF1OsfCzFMvGQ7REi9Yna7d9OwH8BfaW4iAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="Pick_Left1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
